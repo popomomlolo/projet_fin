@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jeu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="libs/jquery/jquery.min.js"></script>
+        <script src="js/jeu.js"></script>
+
+    </head>
+    <body>
+        <div class="container m-5">
+            <h1>jeu</h1>
+            <div class="row mt-4">
+                <div class="col-6">
+                    <form>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="input-group mt-5">
+                                    <span class="input-group-text">Liste des Question</span>
+                                    <select class="form-select" name="listeQuestion" id="listeQuestion">       
+                                    </select>
+                                </div>
+                                <textarea class="mt-3 w-100 form-text" name="adresse" id="adresse" readonly="readonly"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                    <form id="formulaireLogin">
+                        <div class="input-group">
+                            <input class="form-control"  id="reponse" name="reponse" placeholder="reponse" required/>    
+                        </div>
+                        <div class="btn-group mt-3 border border-black w-100">
+                            <input class="btn btn-primary me-2" type="button" value="Identification" id="verifLogin"/>          
+                            <button class="bg-body btn" type="button"> Résultat
+                                <span id="pastille" class="badge text-bg-light">&nbsp;&nbsp;</span> 
+                            </button>
+                        </div>
+                    </form>        
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
